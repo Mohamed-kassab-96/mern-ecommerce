@@ -81,7 +81,7 @@ export async function login(req, res) {
                 role: user.role
             }})
         } else {
-            res.status(400).json({message: "Invalud email or password"})
+            res.status(400).json({message: "Invalud Email or Password"})
         }
     } catch (error) {
         res.status(500).json({success: false, message: "Internal server error"});
